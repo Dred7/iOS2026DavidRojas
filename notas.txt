@@ -1,0 +1,27 @@
+var mensaje = "Hello World!"
+
+print(mensaje)
+
+mensaje = "La Mañanera"
+
+print(mensaje)
+
+let defaultScore = 100
+var jugadorUno = defaultScore
+var jugadorDos = defaultScore
+
+print(jugadorUno)
+print(jugadorDos)
+
+jugadorUno = 200
+
+print(jugadorUno)
+
+//este es un cometario
+
+/* este es un comentario multilinea*/
+
+let score = 1.0
+let score2: Float = 1.0
+print(type(of: score))
+print(type(of: score2))
