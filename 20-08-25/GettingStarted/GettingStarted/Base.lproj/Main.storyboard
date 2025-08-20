@@ -32,7 +32,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uOD-Vf-UHG" secondAttribute="bottom" constant="16" id="scN-XW-feA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="LMV-Eh-kk4"/>
+                    <navigationItem key="navigationItem" title="Title" id="LMV-Eh-kk4" userLabel="Atras"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
