@@ -1,28 +1,23 @@
 //
 //  ViewController.swift
-//  GettingStarded2
+//  080925
 //
+//  Created by Facultad Contaduría y Administración on 08/09/25.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var textField: UITextField!
-    
+    @IBOutlet var password: UITextField!
+    @IBOutlet var username: UITextField!
+    @IBAction func login(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
     }
 
-    @IBAction func didTapNextVc(_ sender: Any) {
-        
-        //Aqui Hay q Hacer la instancia
-        
-        }
-        
-    }
-    
+
 }
 

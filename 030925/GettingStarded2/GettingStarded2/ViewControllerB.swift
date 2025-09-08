@@ -7,7 +7,13 @@
 import Foundation
 import UIKit
 
-class ViewControllerB: UIViewController {
+class ViewControllerB: BaseViewController {
+
+    @IBOutlet var labelMessage: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        labelMessage.text = message
+    }
     
     @IBAction func didTapVC(_ sender: Any) {
         //Aqui Hay q Hacer la instancia
