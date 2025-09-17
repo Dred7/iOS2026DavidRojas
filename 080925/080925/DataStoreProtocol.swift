@@ -7,6 +7,7 @@
 
 import Foundation
 protocol DataStoreProtocol {
+    
     func save(user:User) -> Bool
-    func obtain() -> User
+    func obtain(username: String) -> User?
 }

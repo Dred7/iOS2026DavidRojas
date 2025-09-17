@@ -7,14 +7,23 @@
 
 import Foundation
 class DataStore: DataStoreProtocol {
+    
+    let userDefualts = UserDefaults()
+    
     func save(user: User) -> Bool {
-        //userdefaults
-        
-        return false
+        userDefualts.set(user.asJson, forKey: DataStore.key)
+        return true
     }
     
-    func obtain() -> User {
-        return .mock
+    func obtain(username: String) -> User? {
+        let userString = userDefualts.string(forKey: DataStore.key)
+        let decoder = JSONDecoder()
+        if let data = userString?.data(using: .utf8) {
+            return try? decoder.decode(User.self, from: data)
+        }else{
+            return nil
+        }
+        
     }
     
     

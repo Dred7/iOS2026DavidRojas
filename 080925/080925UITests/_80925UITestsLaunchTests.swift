@@ -8,6 +8,24 @@
 import XCTest
 
 final class _80925UITestsLaunchTests: XCTestCase {
+    
+    func testDataStore(){
+        let userTest = User(
+            username: "ivan",
+            password: "123",
+            lastLogged: Date(),
+            expirationDate: Date()
+        )
+        let dataStore = DataStore()
+        let resultado = dataStore.saveUser(userTest)
+        XCTAssertTrue(resultado)
+        
+        let obtainedUser = dataStore.obtain()
+        XCTAssertNotNil(obtainedUser)
+        XCTAssertEqual(obtainedUser?.username, "ivan")
+        XCTAssertEqual(obtainedUser?.password, "123")
+        
+    }
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
